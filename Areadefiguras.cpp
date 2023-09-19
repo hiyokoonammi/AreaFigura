@@ -3,12 +3,15 @@
 
 int main()
 {
-	int area;
-	int altura;
+	float area;
+	float altura;
+	float base;
 
-	printf("Lado de un cuadrado: ");
-	scanf_s("%i", &altura);
+	printf("Base: ");
+	scanf_s("%f", &base);
+	printf("Altura: ");
+	scanf_s("%f", &altura);
 
-	area = altura * altura;
-	printf("El cuadro de %i x %i tienen area de %i", altura, altura, area);
+	area = (base * altura)/2;
+	printf("El triangulo de base %.2f por altura %.2f tienen area de %.2f", base, altura, area);
 }
